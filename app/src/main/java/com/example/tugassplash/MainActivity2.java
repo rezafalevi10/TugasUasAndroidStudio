@@ -17,7 +17,7 @@ public class MainActivity2 extends AppCompatActivity {
     CardView setalarm;
     CardView maps;
     Uri geoLocation;
-    CardView Shopping;
+    CardView Repository;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -30,7 +30,7 @@ public class MainActivity2 extends AppCompatActivity {
         twoactivity = (CardView)findViewById(R.id.to_twoactivity);
         setalarm = (CardView)findViewById(R.id.to_alarm);
         maps = (CardView) findViewById(R.id.to_maps);
-        Shopping = (CardView) findViewById(R.id.to_shopping) ;
+        Repository = (CardView) findViewById(R.id.to_Repository) ;
 
         hello.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +75,13 @@ public class MainActivity2 extends AppCompatActivity {
                 if(intent.resolveActivity(getPackageManager()) != null){
                     startActivity(intent);
                 }
+            }
+        });
+        Repository.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Buka = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/rezafalevi10/tugasSplash.git"));
+                startActivity(Buka);
             }
         });
 
