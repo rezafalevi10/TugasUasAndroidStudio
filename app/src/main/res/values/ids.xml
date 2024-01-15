@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tab_layout" type="id" />
+    <item name="frame" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="tab1" type="id" />
+    <item name="tab2" type="id" />
+    <item name="tab3" type="id" />
+    <item name="main_layout" type="id" />
+    <item name="framelayout" type="id" />
+    <item name="tablayout" type="id" />
+</resources>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.annotation.SuppressLint;
+import android.app.Fragment;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ public class MainActivity2 extends AppCompatActivity {
     CardView maps;
     Uri geoLocation;
     CardView Repository;
+    CardView Fragmentaja;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -31,6 +33,15 @@ public class MainActivity2 extends AppCompatActivity {
         setalarm = (CardView)findViewById(R.id.to_alarm);
         maps = (CardView) findViewById(R.id.to_maps);
         Repository = (CardView) findViewById(R.id.to_Repository) ;
+        Fragmentaja = (CardView) findViewById(R.id.to_Fragment);
+
+        Fragmentaja.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Buka = new Intent(MainActivity2.this, TabsActivity.class);
+                startActivity(Buka);
+            }
+        });
 
         hello.setOnClickListener(new View.OnClickListener() {
             @Override
